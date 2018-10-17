@@ -9,10 +9,10 @@ Item {
         var comp
         var obj
         if(Qt.platform.os!=='android'){
-            comp = Qt.createComponent("../../Xw.qml")
+            comp = Qt.createComponent("../../../Xw.qml")
             obj = comp.createObject(r, {"url":url})
         }else{
-            comp = Qt.createComponent("../../Xw2.qml")
+            comp = Qt.createComponent("../../../Xw2.qml")
             obj = comp.createObject(r, {"url":url})
         }
     }
